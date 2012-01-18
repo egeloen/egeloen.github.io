@@ -1,0 +1,95 @@
+body, h1, h2, ul, p {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    text-align: justify;
+}
+
+h1, h2 {
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #0050BB;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+div#container {
+    width: 800px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+div#container a.title {
+    font-size: 20px;
+}
+
+div#container header img#avatar {
+    float: left;
+}
+
+div#container header a {
+    margin-left: 30px;
+    line-height: 60px;
+}
+
+div#container header a#rss {
+    float: right;
+    height: 30px;
+    width: 30px;
+    margin-top: 15px;
+    background: url('/images/rss.png') no-repeat;
+}
+
+div#container header a.extra, 
+div#container div#main ul#posts {
+    color: #93A1A1;
+}
+
+div#container div#main h2 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+div#container div#main ul#posts, 
+div#container div#main ul#symfony2-bundles,
+div#container footer ul#social, 
+div#container footer div#summary {
+    line-height: 25px;
+}
+
+div#container footer {
+    margin-top: 20px;
+}
+
+div#container footer ul#social {
+    float: left;
+}
+
+div#container footer ul#social a.icon {
+    padding-left: 25px;
+}
+
+div#container footer ul#social a.github {
+    background: url('/images/github.png') no-repeat;
+}
+
+div#container footer ul#social a.twitter {
+    background: url('/images/twitter.png') no-repeat;
+}
+
+div#container footer div#summary {
+    text-align: right;
+}

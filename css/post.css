@@ -1,0 +1,18 @@
+div#post h1 {
+    margin-top: 20px;
+}
+
+div#post p#meta {
+    color: #93A1A1;
+    font-size: 14px;
+    font-style: italic;
+}
+
+div#post div#content {
+    margin: 15px 0px;
+}
+
+div#post div#content p {
+    margin: 15px 0px;
+    line-height: 25px;
+}
