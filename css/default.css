@@ -10,7 +10,7 @@ body {
 }
 
 h1, h2 {
-    font-size: 18px;
+    font-size: 24px;
 }
 
 ul {
@@ -32,20 +32,27 @@ div#container {
     padding-top: 20px;
 }
 
-div#container a.title {
+div#container header a.title,
+div#container header p.bio {
+    display: block;
+    margin-left: 90px;
+    line-height: 28px;
+}
+
+div#container header a.title {
     font-size: 20px;
 }
 
-div#container header img#avatar {
+div#container header p.bio {
+    font-size: 12px;
+    font-style: italic;
+}
+
+div#container header img.avatar {
     float: left;
 }
 
-div#container header a {
-    margin-left: 30px;
-    line-height: 60px;
-}
-
-div#container header a#rss {
+div#container header a.rss {
     float: right;
     height: 30px;
     width: 30px;
@@ -53,7 +60,7 @@ div#container header a#rss {
     background: url('/images/rss.png') no-repeat;
 }
 
-div#container header a#rss:hover {
+div#container header a.rss:hover {
     text-decoration: none;
 }
 
@@ -66,9 +73,9 @@ div#container div#main h2 {
     margin-bottom: 5px;
 }
 
-div#container div#main ul#posts, 
-div#container div#main ul#symfony2-bundles,
-div#container footer ul#social, 
+div#container div#main ul#posts,
+div#container div#main ul.famous-projects,
+div#container footer ul#social,
 div#container footer div#summary {
     line-height: 25px;
 }

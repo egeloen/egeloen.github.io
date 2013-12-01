@@ -16,3 +16,8 @@ div#post div#content p {
     margin: 15px 0px;
     line-height: 25px;
 }
+
+div#post p#fork-and-edit {
+    text-align: center;
+    font-style: italic;
+}
