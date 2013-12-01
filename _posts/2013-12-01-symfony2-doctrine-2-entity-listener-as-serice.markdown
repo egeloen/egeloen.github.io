@@ -55,8 +55,8 @@ class UserListener
 {% endhighlight %}
 
 The goal of this listener is to send a welcome email when a user will be persisted for the first time. But here, we
-face an issue because the logic we need to implement is already available in a dedicated service and duplicated code
-is a bad practice! So, what can I do? Am I fucked?
+face an issue because the logic we need to implement is already available in a dedicated service and
+**duplicated code is a bad practice**! So, what can I do? Am I fucked?
 
 ## Entity Listener Resolver
 
