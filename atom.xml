@@ -12,7 +12,7 @@ layout: nil
     <id>{{ site.meta.url }}</id>
 
     <author>
-        <name{{ site.meta.author }}</name>
+        <name>{{ site.meta.author }}</name>
         <email>{{ site.meta.email }}</email>
     </author>
 
