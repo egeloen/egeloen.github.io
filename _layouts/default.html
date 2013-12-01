@@ -1,30 +1,58 @@
 <!doctype html>
 <html>
     <head>
-        <title>{{ page.title }}</title>
+        <meta charset="utf-8" />
+        <meta name="author" content="{{ site.meta.author }}" />
 
-        <link rel="stylesheet" type="text/css" href="/css/default.css" />
-        <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
-        <link rel="stylesheet" type="text/css" href="/css/post.css" />
+        {% if page.title %}
+            <title>{{ page.title }} | {{ site.meta.title }}</title>
+
+            <meta name="twitter:card" content="summary">
+            <meta name="twitter:site" content="@egeloen">
+            <meta name="twitter:creator" content="@egeloen">
+            <meta name="twitter:title" content="{{ page.title }}">
+            <meta name="twitter:description" content="{{ page.description }}">
+        {% else %}
+            <title>{{ site.meta.title }}</title>
+        {% endif %}
+
+        <link rel="stylesheet" type="text/css" href="/assets/css/default.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/syntax.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/post.css" />
+
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="/assets/js/anchorify/anchorify.min.js"></script>
     </head>
 
     <body>
         <div id="container">
             <header>
                 <a href="http://github.com/egeloen/egeloen.github.com">
-                    <img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub">
+                    <img
+                        class="github-ribbon"
+                        src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png"
+                        alt="Fork me on GitHub"
+                    />
                 </a>
+
                 <a class="rss" href="/atom.xml">&nbsp;</a>
-                <img class="avatar" src="https://secure.gravatar.com/avatar/81e83270085f7f733a440c0283c4b39b?size=60" alt="Avatar" />
-                <a href="/" class="title">Eric GELOEN</a>
+
+                <img
+                    class="avatar"
+                    src="https://secure.gravatar.com/avatar/81e83270085f7f733a440c0283c4b39b?size=60"
+                    alt="Avatar"
+                />
+                <a href="/" class="title">{{ site.meta.author }}</a>
                 <p class="bio">
                     Architect & Lead Developer at <a href="http://www.widop.com">Wid'op</a> by day
                     | Open Source developer by night!
-                </p
+                </p>
             </header>
+
             <div id="main" role="main">
                 {{ content }}
             </div>
+
             <footer>
                 <ul id="social">
                     <li>
@@ -34,6 +62,7 @@
                         <a href="http://www.twitter.com/egeloen" class="icon twitter">Twitter</a>
                     </li>
                 </ul>
+
                 <div id="summary">
                     <a href="https://twitter.com/#!/search?q=%23OOP">#OOP</a>,
                     <a href="https://twitter.com/#!/search?q=%23PHP">#PHP developer</a>,
@@ -42,9 +71,13 @@
                     <br/>
                     Productive if you let me smoke cigarettes, drink coffee & sleep a little bit :)
                     <br />
-                    <a href="mailto:geloen.eric@gmail.com">geloen.eric@gmail.com</a>
+                    <a href="mailto:{{ site.meta.email }}">{{ site.meta.email }}</a>
                 </div>
             </footer>
         </div>
+
+        <script type="text/javascript">
+            $('h2, h3, h4, h5, h6').anchorify();
+        </script>
     </body>
 </html>

@@ -1,4 +1,8 @@
-body, h1, h2, ul, p {
+body,
+h1,
+h2,
+ul,
+p {
     margin: 0px;
     padding: 0px;
 }
@@ -9,7 +13,8 @@ body {
     text-align: justify;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-size: 24px;
 }
 
@@ -26,33 +31,50 @@ a:hover {
     text-decoration: underline;
 }
 
-div#container {
+.github-ribbon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 0px;
+}
+
+.anchor-link {
+    color: #EEE;
+    padding: 0px 0px 0px 4px;
+    font-size: 50%;
+}
+
+.anchor-link:hover {
+    color: #0050BB;
+}
+
+#container {
     width: 800px;
     margin: auto;
     padding-top: 20px;
 }
 
-div#container header a.title,
-div#container header p.bio {
+header .avatar {
+    float: left;
+}
+
+header .title,
+header .bio {
     display: block;
     margin-left: 90px;
     line-height: 28px;
 }
 
-div#container header a.title {
+header .title {
     font-size: 20px;
 }
 
-div#container header p.bio {
+header .bio {
     font-size: 12px;
     font-style: italic;
 }
 
-div#container header img.avatar {
-    float: left;
-}
-
-div#container header a.rss {
+header .rss {
     float: right;
     height: 30px;
     width: 30px;
@@ -60,46 +82,46 @@ div#container header a.rss {
     background: url('/images/rss.png') no-repeat;
 }
 
-div#container header a.rss:hover {
+header a.rss:hover {
     text-decoration: none;
 }
 
-div#container div#main ul#posts {
-    color: #93A1A1;
-}
-
-div#container div#main h2 {
+#main h2 {
     margin-top: 20px;
     margin-bottom: 5px;
 }
 
-div#container div#main ul#posts,
-div#container div#main ul.famous-projects,
-div#container footer ul#social,
-div#container footer div#summary {
+#posts {
+    color: #93A1A1;
+}
+
+#posts,
+.famous,
+#social,
+#summary {
     line-height: 25px;
 }
 
-div#container footer {
-    margin-top: 20px;
+footer {
+    margin: 20px 0px;
 }
 
-div#container footer ul#social {
+#social {
     float: left;
 }
 
-div#container footer ul#social a.icon {
+#social .icon {
     padding-left: 25px;
 }
 
-div#container footer ul#social a.github {
+#social .github {
     background: url('/images/github.png') no-repeat;
 }
 
-div#container footer ul#social a.twitter {
+#social .twitter {
     background: url('/images/twitter.png') no-repeat;
 }
 
-div#container footer div#summary {
+#summary {
     text-align: right;
 }

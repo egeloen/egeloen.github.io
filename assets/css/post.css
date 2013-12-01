@@ -1,23 +1,23 @@
-div#post h1 {
+#post h1 {
     margin-top: 20px;
 }
 
-div#post p#meta {
+#post .meta {
     color: #93A1A1;
     font-size: 14px;
     font-style: italic;
 }
 
-div#post div#content {
+#post .content {
     margin: 15px 0px;
 }
 
-div#post div#content p {
+#post .content p {
     margin: 15px 0px;
     line-height: 25px;
 }
 
-div#post p#fork-and-edit {
+#post .fork-and-edit {
     text-align: center;
     font-style: italic;
 }

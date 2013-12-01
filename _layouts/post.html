@@ -4,10 +4,10 @@ layout: default
 
 <div id="post">
     <h1>{{ page.title }}</h1>
-    <p id="meta">{{ page.date | date_to_string }} - {{ page.location }}</p>
-    <div id="content">
+    <p class="meta">{{ page.date | date_to_string }} - {{ page.location }}</p>
+    <div class="content">
         {{ content }}
-        <p id="fork-and-edit">
+        <p class="fork-and-edit">
             By the way, if you found a typo, please
             <a href="https://github.com/egeloen/egeloen.github.com/edit/master/_posts/{{ page.url | remove_first: '/' | replace_first: '/', '-' | replace_first: '/', '-' |replace_first: '/', '-' | remove: '/' }}.markdown">
                 fork and edit this post
