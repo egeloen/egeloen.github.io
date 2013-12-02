@@ -1,0 +1,6 @@
+{
+    "name": "egeloen.github.io",
+    "dependencies": {
+        "anchorify": "1.1.*"
+    }
+}
