@@ -60,10 +60,11 @@ face an issue because the logic we need to implement is already available in a d
 
 ## Entity Listener Resolver
 
-Entity listener resolver to the rescue! This one is responsible to **retrieve the entity listener instance according to its name**
-(ie. the class name provided as configuration) and can be overridden via the Doctrine2 bundle configuration :).So, we
-can provide our own implementation which will resolve the entity listener in the Symfony2 container or fallback on the
-default implementation if the listener can not be found in the container.
+Entity listener resolver to the rescue! This one is responsible to
+**retrieve the entity listener instance according to its name** (ie. the class name provided as configuration) and can
+be overridden via the Doctrine2 bundle configuration :). So, we can provide our own implementation which will resolve
+the entity listener in the Symfony2 container or fallback on the default implementation if the listener can not be
+found in the container.
 
 So, let's go for implementing it:
 
