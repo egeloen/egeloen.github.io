@@ -17,7 +17,9 @@
     line-height: 25px;
 }
 
-#post .fork-and-edit {
+#post .content .fork-and-edit,
+#post .content .license {
+    margin: 0px;
     text-align: center;
     font-style: italic;
 }
