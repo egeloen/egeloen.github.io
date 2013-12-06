@@ -1,6 +1,7 @@
 {
     "name": "egeloen.github.io",
     "dependencies": {
-        "anchorify": "1.1.*"
+        "anchorify": "1.1.*",
+        "totop": "https://github.com/sksmatt/UItoTop-jQuery-Plugin.git"
     }
 }

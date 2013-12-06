@@ -1,0 +1,13 @@
+{
+  "name": "totop",
+  "homepage": "https://github.com/sksmatt/UItoTop-jQuery-Plugin",
+  "_release": "f97c324d75",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f97c324d75eddcb4f67fd7ca40ad500b64ac0d4b"
+  },
+  "_source": "https://github.com/sksmatt/UItoTop-jQuery-Plugin.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/sksmatt/UItoTop-jQuery-Plugin.git"
+}
