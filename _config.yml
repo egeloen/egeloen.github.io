@@ -1,5 +1,6 @@
 safe:      true
 permalink: pretty
+exclude:   [ README.md, Gemfile ]
 
 meta:
     title:  Eric GELOEN
