@@ -1,20 +1,21 @@
 module.exports = function(grunt) {
     grunt.initConfig({
-        concat: {
-            css: {
-                src: [
-                    '_resources/lib/totop/css/ui.totop.css',
-                    '_resources/css/*.css'
-                ],
-                dest: '_build/default.css'
-            },
-            js: {
-                src: [
-                    '_resources/lib/anchorify/anchorify.min.js' ,
-                    '_resources/lib/totop/js/jquery.ui.totop.min.js',
-                    '_resources/js/*.js'
-                ],
-                dest: '_build/default.js'
+        bower: {
+            install: {
+                options: {
+                    targetDir: './_resources/lib',
+                    cleanBowerDir: true
+                }
+            }
+        },
+        cssmin: {
+            default: {
+                files: {
+                    'assets/default.min.css': [
+                        '_resources/lib/totop/css/ui.totop.css',
+                        '_resources/css/*.css'
+                    ]
+                }
             }
         },
         copy: {
@@ -35,41 +36,29 @@ module.exports = function(grunt) {
                     }]
                 },
                 files: [{
-                    src: [ '<%= concat.css.dest %>' ],
-                    dest: '<%= concat.css.dest %>'
+                    src: [ 'assets/default.min.css' ],
+                    dest: 'assets/default.min.css'
                 }]
-            }
-        },
-        cssmin: {
-            default: {
-                files: {
-                    'assets/default.min.css': [ '<%= concat.css.dest %>' ]
-                }
             }
         },
         uglify: {
             default: {
                 files: {
-                    'assets/default.min.js': [ '<%= concat.js.dest %>' ]
-                }
-            }
-        },
-        bower: {
-            install: {
-                options: {
-                    targetDir: './_resources/lib',
-                    cleanBowerDir: true
+                    'assets/default.min.js': [
+                        '_resources/lib/anchorify/anchorify.min.js' ,
+                        '_resources/lib/totop/js/jquery.ui.totop.min.js',
+                        '_resources/js/*.js'
+                    ]
                 }
             }
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-replace');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-bower-task');
 
-    grunt.registerTask('build', [ 'concat', 'copy', 'replace', 'cssmin', 'uglify' ]);
+    grunt.registerTask('build', [ 'bower:install', 'cssmin', 'copy', 'replace', 'uglify' ]);
 };
