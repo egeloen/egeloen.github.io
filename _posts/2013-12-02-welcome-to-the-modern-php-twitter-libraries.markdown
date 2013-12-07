@@ -31,7 +31,7 @@ Guzzle, Buzz, Zend, Stream...
 
 Then, if we compute all these concepts together, we get this beautiful picture overview:
 
-![Overview Picture](/assets/posts/2013-12-02-welcome-to-the-modern-php-twitter-libraries/overview.png)
+![Overview Picture](/images/posts/2013-12-02-welcome-to-the-modern-php-twitter-libraries/overview.png)
 
 ## Twitter OAuth library
 

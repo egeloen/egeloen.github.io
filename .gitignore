@@ -1,2 +1,9 @@
-_drafts
-_site
+# Jekyll
+/_drafts
+/_site
+
+# NodeJS
+/node_modules
+
+# Grunt
+/_build

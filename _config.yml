@@ -1,6 +1,6 @@
 safe:      true
 permalink: pretty
-exclude:   [ README.md, Gemfile ]
+exclude:   [ Gemfile, Gruntfile.js, node_modules, package.json, README.md ]
 
 meta:
     title:  Eric GELOEN
