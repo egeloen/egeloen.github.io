@@ -1,6 +1,6 @@
 # README
 
-[![Build Status](https://travis-ci.org/egeloen/egeloen.github.com.png?branch=master)](https://travis-ci.org/egeloen/egeloen.github.com)
+[![Build Status](https://travis-ci.org/egeloen/egeloen.github.io.png?branch=master)](https://travis-ci.org/egeloen/egeloen.github.io)
 
 My Blog! Its meaning is pretty simple: I want to explain some interesting features I discover and I would like to have
 some feedbacks about the :)
