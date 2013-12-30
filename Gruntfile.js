@@ -4,7 +4,7 @@ module.exports = function(grunt) {
             install: {
                 options: {
                     targetDir: './_resources/lib',
-                    cleanBowerDir: true
+                    cleanup: true
                 }
             }
         },
