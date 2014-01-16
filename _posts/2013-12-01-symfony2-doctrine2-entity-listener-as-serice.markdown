@@ -128,7 +128,7 @@ The compiler pass implemenation will look like:
 <?php
 namespace Acme\DemoBundle\DependencyInjection\Compiler;
 
-use Symfony\Component\DependencyInjection\CompilerPass\CompilerPassInterface;
+use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 class DoctrineEntityListenerPass implements CompilerPassInterface
