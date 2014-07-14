@@ -171,7 +171,7 @@ class XmlAcmeDemoExtensionTest extends AbstractAcmeDemoExtensionTest
     protected function loadConfiguration(ContainerBuilder $container, $resource)
     {
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/Fixtures/Xml/'));
-        $loader->load($configuration.'.xml');
+        $loader->load($resource.'.xml');
     }
 }
 {% endhighlight %}
@@ -226,7 +226,7 @@ class YamlAcmeDemoExtensionTest extends AbstractAcmeDemoExtensionTest
     protected function loadConfiguration(ContainerBuilder $container, $resource)
     {
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/Fixtures/Yaml/'));
-        $loader->load($configuration.'.yml');
+        $loader->load($resource.'.yml');
     }
 }
 {% endhighlight %}
