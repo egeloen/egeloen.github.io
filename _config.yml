@@ -1,3 +1,4 @@
+markdown:  kramdown
 safe:      true
 permalink: pretty
 exclude:   [ Gemfile, Gruntfile.js, node_modules, package.json, README.md ]
