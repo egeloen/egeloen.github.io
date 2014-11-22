@@ -4,3 +4,6 @@
 
 # NodeJS
 /node_modules
+
+# Bower
+/_resources/lib
