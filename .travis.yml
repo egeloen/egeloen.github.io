@@ -1,2 +1,6 @@
 language: ruby
+
 script: bundle exec jekyll build
+
+notifications:
+    email: geloen.eric@gmail.com
