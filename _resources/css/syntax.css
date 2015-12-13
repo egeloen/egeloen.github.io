@@ -1,5 +1,5 @@
 pre { margin: 0; padding: 1%; overflow-x: auto; }
-.highlight, pre { color: #fff; font-size: 90%; line-height: 1.3em; background-color: #000; }
+.highlight, pre { color: #fff; font-size: 90%; line-height: 1.3em; background-color: #000; margin: 0px; }
 .highlight .c { color: #008800; font-style: italic; } /* Comment */
 .highlight .err { color: #ffffff } /* Error */
 .highlight .g { color: #ffffff } /* Generic */
